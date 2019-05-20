@@ -5,11 +5,10 @@
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
-<!--       <a-marker type="pattern" url="p1.patt"> -->
+       <a-marker type="pattern" url="p1.patt"> 
 <!--       	<a-box position='0 0.5 0' material='color: yellow;'></a-box> -->
-<a-marker preset="hiro">
-          <a-entity position='0 0.5 0' obj-model="obj: url(slice.obj); mtl: url(slice.mtl)" rotation="0 85 0" scale = "0.005 0.005 0.005">
-            </a-entity>
+
+		<a-triangle src="#platform" rotation="-90 0 0"></a-triangle>
       </a-marker>
 
       <a-marker type="pattern" url="p2.patt">
