@@ -4,10 +4,46 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
-      <a-marker preset="hiro">
-          <a-entity position='0 0.5 0' obj-model="obj: url(a.obj)" rotation="-90 0 0" material='color: #5F7467;' scale="0.005 0.005 0.005">
+      <a-marker-camera type="pattern" patternUrl="p1.patt">
+          <a-entity position='0 0.5 0' obj-model="obj: url(slice.obj)" rotation="0 0 0">
             </a-entity>
-      </a-marker>
+      </a-marker-camera>
+
+      <a-marker-camera type="pattern" patternUrl="p2.patt">
+          <a-entity position='0 0.5 0' obj-model="obj: url(slice.obj)" rotation="45 0 0">
+            </a-entity>
+      </a-marker-camera>
+      
+      <a-marker-camera type="pattern" patternUrl="p3.patt">
+          <a-entity position='0 0.5 0' obj-model="obj: url(slice.obj)" rotation="90 0 0">
+            </a-entity>
+      </a-marker-camera>
+      
+      <a-marker-camera type="pattern" patternUrl="p4.patt">
+          <a-entity position='0 0.5 0' obj-model="obj: url(slice.obj)" rotation="135 0 0">
+            </a-entity>
+      </a-marker-camera>
+      
+      <a-marker-camera type="pattern" patternUrl="p5.patt">
+          <a-entity position='0 0.5 0' obj-model="obj: url(slice.obj)" rotation="180 0 0">
+            </a-entity>
+      </a-marker-camera>
+
+      <a-marker-camera type="pattern" patternUrl="p6.patt">
+          <a-entity position='0 0.5 0' obj-model="obj: url(slice.obj)" rotation="225 0 0">
+            </a-entity>
+      </a-marker-camera>
+      
+      <a-marker-camera type="pattern" patternUrl="p7.patt">
+          <a-entity position='0 0.5 0' obj-model="obj: url(slice.obj)" rotation="270 0 0">
+            </a-entity>
+      </a-marker-camera>
+      
+      <a-marker-camera type="pattern" patternUrl="p8.patt">
+          <a-entity position='0 0.5 0' obj-model="obj: url(slice.obj)" rotation="315 0 0">
+            </a-entity>
+      </a-marker-camera>
+      
       <a-entity camera></a-entity>
     </a-scene>
   </body>
